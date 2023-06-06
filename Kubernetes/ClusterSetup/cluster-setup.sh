@@ -31,7 +31,7 @@ cat <<EOF | sudo tee /etc/apt/sources.list.d/kubernetes.list
 deb https://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 apt-get update -y
-apt-get install -y kubelet kubeadm kubectl kubernetes-cni
+apt install -y kubelet kubeadm kubectl kubernetes-cni
 apt-mark hold kubelet kubeadm kubectl
 
 echo "Checking node type"
